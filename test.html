@@ -9,13 +9,12 @@
 <body class="test-page">
     <div class="test-container">
         <header class="test-header">
+            <a href="index.html" class="back-link">← К презентации</a>
             <h1>🧩 Тест на групповую сплоченность</h1>
             <p>Оцени утверждения по шкале от 1 до 5 и узнай уровень единства в твоей команде</p>
         </header>
 
-        <form id="testForm" class="test-form">
-            <!-- Вопросы генерируются JS -->
-        </form>
+        <form id="testForm" class="test-form"></form>
 
         <div class="test-actions">
             <button type="button" id="submitBtn" class="btn btn-primary" disabled>Показать результат</button>
@@ -23,11 +22,9 @@
 
         <div id="result" class="result hidden">
             <h2 id="resultTitle"></h2>
-            <div class="result-score">
-                <div class="score-circle" id="scoreCircle">
-                    <span id="scoreValue">0</span>
-                    <small>из 50</small>
-                </div>
+            <div class="score-circle" id="scoreCircle">
+                <span id="scoreValue">0</span>
+                <small>из 50</small>
             </div>
             <p id="resultText"></p>
             <div class="result-actions">
@@ -36,7 +33,6 @@
             </div>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
