@@ -3,196 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Групповая сплоченность — презентация</title>
+    <title>Групповая сплоченность</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 </head>
 <body>
-    <nav class="nav">
-        <div class="logo">🔗 Cohesion</div>
-        <ul class="nav-links">
-            <li><a href="#intro">Введение</a></li>
-            <li><a href="#types">Виды</a></li>
-            <li><a href="#factors">Факторы</a></li>
-            <li><a href="#methods">Методы</a></li>
-            <li><a href="#interactive">Интерактив</a></li>
-        </ul>
-    </nav>
 
-    <!-- HERO -->
-    <section class="hero" id="intro">
-        <div class="hero-content">
-            <h1>Групповая <span class="accent">сплоченность</span></h1>
-            <p class="subtitle">Социально-психологический феномен, объединяющий команду в единое целое</p>
-            <a href="#types" class="btn">Начать изучение ↓</a>
-        </div>
-        <div class="hero-visual">
-            <div class="circle-group">
+<div class="presentation">
+
+    <!-- СЛАЙД 1: ТИТУЛ -->
+    <section class="slide active" data-slide="1">
+        <div class="slide-content center">
+            <div class="tag">Социальная психология · 2026</div>
+            <h1 class="title-huge">Групповая<br><span class="gradient">сплоченность</span></h1>
+            <p class="lead">Что удерживает команду вместе и превращает группу людей в единый организм</p>
+            <div class="circles-bg">
                 <div class="circle c1"></div>
                 <div class="circle c2"></div>
                 <div class="circle c3"></div>
-                <div class="circle c4"></div>
-                <div class="circle c5"></div>
             </div>
         </div>
     </section>
 
-    <!-- ЧТО ЭТО -->
-    <section class="section" id="definition">
-        <h2>Что такое групповая сплоченность?</h2>
-        <div class="card-grid">
-            <div class="card">
-                <div class="card-icon">🤝</div>
-                <h3>Определение</h3>
-                <p>Способность группы сохранять единство и целостность при воздействии внешних и внутренних вызовов.</p>
+    <!-- СЛАЙД 2: ОПРЕДЕЛЕНИЕ -->
+    <section class="slide" data-slide="2">
+        <div class="slide-content">
+            <div class="slide-number">01</div>
+            <h2>Что такое групповая сплоченность?</h2>
+            <div class="definition">
+                <p class="big-quote">Это совокупность сил, удерживающих индивида в группе.</p>
+                <p class="desc">Способность коллектива сохранять единство и целостность перед лицом внешних и внутренних вызовов — от конфликтов до конкуренции.</p>
             </div>
-            <div class="card">
-                <div class="card-icon">🧲</div>
-                <h3>Суть</h3>
-                <p>Совокупность сил, удерживающих индивида в группе: притяжение участников друг к другу и к самой группе.</p>
-            </div>
-            <div class="card">
-                <div class="card-icon">🎯</div>
-                <h3>Результат</h3>
-                <p>Высокая сплоченность ведет к синергии, доверию и достижению целей, превосходящих индивидуальные возможности.</p>
+            <div class="three-cols">
+                <div class="mini-card"><span class="emoji">🤝</span><h4>Единство</h4><p>Чувство «мы» вместо «я»</p></div>
+                <div class="mini-card"><span class="emoji">🧲</span><h4>Притяжение</h4><p>К людям и к общей цели</p></div>
+                <div class="mini-card"><span class="emoji">🛡️</span><h4>Устойчивость</h4><p>Сохранение структуры при стрессе</p></div>
             </div>
         </div>
     </section>
 
-    <!-- ВИДЫ -->
-    <section class="section alt" id="types">
-        <h2>Два вида сплоченности</h2>
-        <div class="split">
-            <div class="split-card">
-                <div class="split-icon">❤️</div>
-                <h3>Эмоциональная</h3>
-                <p>Основана на межличностной симпатии, доверии, чувстве принадлежности. Люди любят быть в этой группе.</p>
-                <ul>
-                    <li>Дружеские связи</li>
-                    <li>Эмоциональная поддержка</li>
-                    <li>Общие ценности</li>
-                </ul>
+    <!-- СЛАЙД 3: ДВА ВИДА -->
+    <section class="slide" data-slide="3">
+        <div class="slide-content">
+            <div class="slide-number">02</div>
+            <h2>Два вида сплоченности</h2>
+            <div class="two-cols">
+                <div class="col-card pink">
+                    <div class="col-icon">❤️</div>
+                    <h3>Эмоциональная</h3>
+                    <ul>
+                        <li>Межличностная симпатия</li>
+                        <li>Доверие и дружба</li>
+                        <li>Чувство принадлежности</li>
+                        <li>Эмоциональная поддержка</li>
+                    </ul>
+                    <div class="col-bottom">Люди <b>любят</b> быть в группе</div>
+                </div>
+                <div class="col-card blue">
+                    <div class="col-icon">⚙️</div>
+                    <h3>Инструментальная</h3>
+                    <ul>
+                        <li>Общая значимая цель</li>
+                        <li>Взаимодополняемость навыков</li>
+                        <li>Профессиональное уважение</li>
+                        <li>Распределение ролей</li>
+                    </ul>
+                    <div class="col-bottom">Группа <b>нужна</b> для результата</div>
+                </div>
             </div>
-            <div class="split-card">
-                <div class="split-icon">⚙️</div>
-                <h3>Инструментальная</h3>
-                <p>Основана на общей задаче, профессиональном уважении, взаимодополняемости навыков. Группа нужна для результата.</p>
-                <ul>
-                    <li>Общая цель</li>
-                    <li>Распределение ролей</li>
-                    <li>Взаимозависимость</li>
-                </ul>
-            </div>
-        </div>
-        <div class="highlight-box">
-            💡 <strong>Успешная команда</strong> сочетает оба вида: люди и любят друг друга, и эффективно работают вместе.
+            <div class="formula">💡 Успешная команда = ❤️ + ⚙️</div>
         </div>
     </section>
 
-    <!-- ФАКТОРЫ -->
-    <section class="section" id="factors">
-        <h2>Факторы, влияющие на сплоченность</h2>
-        <div class="factors-list">
-            <div class="factor">
-                <div class="factor-num">01</div>
-                <div class="factor-text">
-                    <h4>Размер группы</h4>
-                    <p>Оптимально 5–9 человек. В малых группах легче установить контакт.</p>
-                </div>
+    <!-- СЛАЙД 4: ФАКТОРЫ -->
+    <section class="slide" data-slide="4">
+        <div class="slide-content">
+            <div class="slide-number">03</div>
+            <h2>Что влияет на сплоченность</h2>
+            <div class="factors-grid">
+                <div class="factor"><span class="f-num">01</span><div><h4>Размер группы</h4><p>Оптимально 5–9 человек</p></div></div>
+                <div class="factor"><span class="f-num">02</span><div><h4>Общая цель</h4><p>Ясная и значимая миссия</p></div></div>
+                <div class="factor"><span class="f-num">03</span><div><h4>Внешний вызов</h4><p>Конкуренция объединяет</p></div></div>
+                <div class="factor"><span class="f-num">04</span><div><h4>Успех группы</h4><p>Победы усиливают единство</p></div></div>
+                <div class="factor"><span class="f-num">05</span><div><h4>Стиль лидера</h4><p>Демократичный — лучше</p></div></div>
+                <div class="factor"><span class="f-num">06</span><div><h4>Частота контактов</h4><p>Общение укрепляет связи</p></div></div>
             </div>
-            <div class="factor">
-                <div class="factor-num">02</div>
-                <div class="factor-text">
-                    <h4>Общая цель</h4>
-                    <p>Ясная, значимая и достижимая цель объединяет сильнее любых тимбилдингов.</p>
+        </div>
+    </section>
+
+    <!-- СЛАЙД 5: СТАДИИ -->
+    <section class="slide" data-slide="5">
+        <div class="slide-content">
+            <div class="slide-number">04</div>
+            <h2>Стадии развития команды</h2>
+            <p class="subtitle">Модель Брюса Такмана</p>
+            <div class="timeline">
+                <div class="stage">
+                    <div class="stage-dot">1</div>
+                    <h4>Формирование</h4>
+                    <p>Знакомство, осторожность, поиск ролей</p>
                 </div>
-            </div>
-            <div class="factor">
-                <div class="factor-num">03</div>
-                <div class="factor-text">
-                    <h4>Внешние вызовы</h4>
-                    <p>Конкуренция с другими группами или общая угроза повышают внутреннее единство.</p>
+                <div class="stage-arrow">→</div>
+                <div class="stage">
+                    <div class="stage-dot">2</div>
+                    <h4>Шторм</h4>
+                    <p>Конфликты, борьба за влияние</p>
                 </div>
-            </div>
-            <div class="factor">
-                <div class="factor-num">04</div>
-                <div class="factor-text">
-                    <h4>Успешность группы</h4>
-                    <p>Достижение результатов повышает привлекательность группы в глазах её членов.</p>
+                <div class="stage-arrow">→</div>
+                <div class="stage">
+                    <div class="stage-dot">3</div>
+                    <h4>Нормирование</h4>
+                    <p>Принятие правил, рост доверия</p>
                 </div>
-            </div>
-            <div class="factor">
-                <div class="factor-num">05</div>
-                <div class="factor-text">
-                    <h4>Стиль лидерства</h4>
-                    <p>Демократичный и поддерживающий лидер усиливает сплоченность; авторитарный — подавляет.</p>
-                </div>
-            </div>
-            <div class="factor">
-                <div class="factor-num">06</div>
-                <div class="factor-text">
-                    <h4>Частота контактов</h4>
-                    <p>Регулярное общение (в том числе неформальное) укрепляет связи между участниками.</p>
+                <div class="stage-arrow">→</div>
+                <div class="stage highlight">
+                    <div class="stage-dot">4</div>
+                    <h4>Функционирование</h4>
+                    <p>Высокая сплоченность и синергия</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- МЕТОДЫ ДИАГНОСТИКИ -->
-    <section class="section alt" id="methods">
-        <h2>Методы диагностики сплоченности</h2>
-        <div class="methods-grid">
-            <div class="method-card">
-                <h3>📊 Опросник Сишора</h3>
-                <p>Измеряет индекс сплоченности группы через оценку удовлетворенности членством в группе.</p>
-            </div>
-            <div class="method-card">
-                <h3>📋 Опросник Сироты</h3>
-                <p>Оценивает три параметра: групповую сплоченность, удовлетворенность группой и мотивацию.</p>
-            </div>
-            <div class="method-card">
-                <h3>🔍 Социометрия Дж. Морено</h3>
-                <p>Выявляет структуру межличностных отношений через взаимные выборы членов группы.</p>
-            </div>
-            <div class="method-card">
-                <h3>🎯 Методика Д. Джонсона</h3>
-                <p>Оценивает степень притягательности группы для её участников по шкале Лайкерта.</p>
+    <!-- СЛАЙД 6: ДИАГНОСТИКА -->
+    <section class="slide" data-slide="6">
+        <div class="slide-content">
+            <div class="slide-number">05</div>
+            <h2>Как измерить сплоченность</h2>
+            <div class="methods">
+                <div class="method">
+                    <div class="method-icon">📊</div>
+                    <div>
+                        <h4>Опросник Сишора</h4>
+                        <p>Индекс удовлетворённости членством в группе</p>
+                    </div>
+                </div>
+                <div class="method">
+                    <div class="method-icon">📋</div>
+                    <div>
+                        <h4>Опросник Сироты</h4>
+                        <p>Сплоченность + удовлетворённость + мотивация</p>
+                    </div>
+                </div>
+                <div class="method">
+                    <div class="method-icon">🔍</div>
+                    <div>
+                        <h4>Социометрия Дж. Морено</h4>
+                        <p>Карта взаимных выборов и скрытых связей</p>
+                    </div>
+                </div>
+                <div class="method">
+                    <div class="method-icon">🎯</div>
+                    <div>
+                        <h4>Методика Д. Джонсона</h4>
+                        <p>Шкала притягательности группы по Лайкерту</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ИНТЕРАКТИВ -->
-    <section class="section interactive" id="interactive">
-        <h2>🎮 Интерактив: проверь свою команду</h2>
-        <p class="lead">Отсканируй QR-код и пройди экспресс-тест на уровень групповой сплоченности</p>
-        <div class="qr-block">
-            <div id="qrcode" class="qr-frame"></div>
-            <p class="qr-hint">📱 Наведи камеру телефона</p>
-            <p class="qr-url" id="qrUrl"></p>
+    <!-- СЛАЙД 7: НЕГАТИВНЫЕ ЭФФЕКТЫ -->
+    <section class="slide" data-slide="7">
+        <div class="slide-content">
+            <div class="slide-number">06</div>
+            <h2>Обратная сторона сплоченности</h2>
+            <p class="subtitle">Слишком сильное единство может навредить</p>
+            <div class="dangers">
+                <div class="danger">
+                    <div class="danger-icon">🧠</div>
+                    <h4>Группомыслие</h4>
+                    <p>Стремление к гармонии подавляет критику. Команда принимает ошибочные решения, чтобы «не раскачивать лодку».</p>
+                </div>
+                <div class="danger">
+                    <div class="danger-icon">🚪</div>
+                    <h4>Изоляция</h4>
+                    <p>«Мы против всех». Закрытость от внешней информации, чужих идей и здоровой критики.</p>
+                </div>
+                <div class="danger">
+                    <div class="danger-icon">⚖️</div>
+                    <h4>Давление конформизма</h4>
+                    <p>Инакомыслящие подвергаются остракизму. Разнообразие мнений исчезает.</p>
+                </div>
+            </div>
         </div>
-        <div class="or-divider">или</div>
-        <a href="test.html" class="btn btn-primary">Пройти тест прямо сейчас →</a>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 · Презентация по социальной психологии</p>
-    </footer>
+    <!-- СЛАЙД 8: УКРЕПЛЕНИЕ -->
+    <section class="slide" data-slide="8">
+        <div class="slide-content">
+            <div class="slide-number">07</div>
+            <h2>Как укрепить сплоченность</h2>
+            <div class="tips-grid">
+                <div class="tip"><span class="tip-num">1</span><p>Сформулируйте <b>общую цель</b>, значимую для каждого</p></div>
+                <div class="tip"><span class="tip-num">2</span><p>Создайте <b>психологическую безопасность</b> — право на ошибку</p></div>
+                <div class="tip"><span class="tip-num">3</span><p>Внедрите <b>совместные ритуалы</b> и традиции</p></div>
+                <div class="tip"><span class="tip-num">4</span><p>Отмечайте <b>общие победы</b>, а не только личные</p></div>
+                <div class="tip"><span class="tip-num">5</span><p>Используйте <b>деловые и ролевые игры</b></p></div>
+                <div class="tip"><span class="tip-num">6</span><p>Поощряйте <b>неформальное общение</b></p></div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-        // Генерация QR-кода на тест (автоматически под текущий домен)
-        document.addEventListener('DOMContentLoaded', () => {
-            const testUrl = window.location.href.replace(/index\.html$/, '').replace(/\/$/, '') + '/test.html';
-            document.getElementById('qrUrl').textContent = testUrl;
-            new QRCode(document.getElementById('qrcode'), {
-                text: testUrl,
-                width: 220,
-                height: 220,
-                colorDark: "#1a1a2e",
-                colorLight: "#ffffff",
-                correctLevel: QRCode.CorrectLevel.H
-            });
-        });
-    </script>
+    <!-- СЛАЙД 9: ИГРЫ -->
+    <section class="slide" data-slide="9">
+        <div class="slide-content">
+            <div class="slide-number">08</div>
+            <h2>Игры как инструмент сплочения</h2>
+            <div class="games">
+                <div class="game">
+                    <div class="game-icon">🏝️</div>
+                    <h4>Симуляции выживания</h4>
+                    <p>«Заблудившиеся в пустыне», «Лунная миссия» — учат консенсусу</p>
+                </div>
+                <div class="game">
+                    <div class="game-icon">🏗️</div>
+                    <h4>Строительные задачи</h4>
+                    <p>«Мост из бумаги» — тренируют распределение ролей</p>
+                </div>
+                <div class="game">
+                    <div class="game-icon">🎭</div>
+                    <h4>Ролевые игры</h4>
+                    <p>Смена ролей развивает эмпатию и понимание системы</p>
+                </div>
+                <div class="game">
+                    <div class="game-icon">🎲</div>
+                    <h4>Стратегические игры</h4>
+                    <p>«Мафия», квесты — тренируют наблюдательность и доверие</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЛАЙД 10: ИНТЕРАКТИВ -->
+    <section class="slide" data-slide="10">
+        <div class="slide-content center">
+            <div class="slide-number">09</div>
+            <h2>Проверь свою команду</h2>
+            <p class="lead">Отсканируй QR-код и пройди экспресс-тест на уровень групповой сплоченности</p>
+            <div class="qr-wrapper">
+                <div class="qr-frame">
+                    <div id="qrcode"></div>
+                </div>
+                <p class="qr-hint">📱 Наведи камеру телефона</p>
+                <p class="qr-url" id="qrUrl"></p>
+            </div>
+            <a href="test.html" class="btn-link">или пройди тест напрямую →</a>
+        </div>
+    </section>
+
+</div>
+
+<!-- НАВИГАЦИЯ -->
+<div class="nav-controls">
+    <button class="nav-btn" id="prevBtn" aria-label="Предыдущий слайд">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="progress">
+        <span id="currentSlide">1</span> / <span id="totalSlides">10</span>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+    <button class="nav-btn" id="nextBtn" aria-label="Следующий слайд">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+</div>
+
+<!-- ТОЧКИ-ИНДИКАТОРЫ -->
+<div class="dots" id="dots"></div>
+
+<script src="script.js"></script>
 </body>
 </html>
